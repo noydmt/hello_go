@@ -44,5 +44,9 @@ func outer() {
 	fmt.Println(s4)
 
 	var i int = 300
-	fmt.Printf("%T\n", i) // int
+	fmt.Printf("%T\n", i)        // int %T が型を表示するフォーマット
+	fmt.Printf("%T\n", int64(i)) // int64
+	fmt.Printf("%T\n", int32(i)) // int32
+	fmt.Printf("%T\n", int16(i)) // int16
+	fmt.Printf("%T\n", int8(i))  // int8
 }
