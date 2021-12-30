@@ -13,4 +13,11 @@ func main() {
 
 	var s string = "Hello Go"
 	fmt.Println(s)
+
+	var t, f bool = true, false
+	fmt.Println(t, f)
+
+	if t {
+		fmt.Println("if文を評価")
+	}
 }
