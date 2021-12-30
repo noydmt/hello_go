@@ -27,4 +27,7 @@ func main() {
 	i3 = 300
 	s3 = "Hello Go World"
 	fmt.Println(i3, s3) // 300 Hello Go World
+
+	i4 := 400
+	fmt.Println(i4)
 }
