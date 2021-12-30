@@ -5,6 +5,9 @@ import (
 	"time"
 )
 
+// i5 := 500 main関数の外で型推論で宣言するとエラー
+var i5 int = 500 // main関数の外でも型を明示的にすれば変数宣言できる
+
 func main() {
 	var (
 		i, i2 int = 100, 200
@@ -30,4 +33,6 @@ func main() {
 
 	i4 := 400
 	fmt.Println(i4)
+
+	fmt.Println(i5)
 }
