@@ -6,28 +6,21 @@ import (
 )
 
 func main() {
+	var (
+		i, i2 int = 100, 200
+		i3    int
+		s, s2 string = "Hello Go", "Hello World"
+		s3    string
+		t, f  bool = true, false
+	)
+
 	fmt.Println(time.Now())
-
-	var i int = 100
-	fmt.Println(i)
-
-	var s string = "Hello Go"
-	fmt.Println(s)
-
-	var t, f bool = true, false
+	fmt.Println(i, s)   // 100 Hello Go
+	fmt.Println(i2, s2) // 200 Hello World
+	fmt.Println(i3, s3) // 0 ※初期化せずに変数宣言するとそれぞれの型のデフォルト値が出力。string は空文字
 	fmt.Println(t, f)
 
 	if t {
 		fmt.Println("if文を評価")
 	}
-
-	var (
-		i2 int    = 200
-		s2 string = "Hello Go2"
-		i3 int
-		s3 string
-	)
-	fmt.Println(i2, s2) // 200 Hello Go2
-	fmt.Println(i3, s3) // 0 ※初期化せずに変数宣言するとそれぞれの型のデフォルト値が出力。string は空文字
-
 }
