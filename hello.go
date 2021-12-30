@@ -24,6 +24,10 @@ func main() {
 	var (
 		i2 int    = 200
 		s2 string = "Hello Go2"
+		i3 int
+		s3 string
 	)
-	fmt.Println(i2, s2)
+	fmt.Println(i2, s2) // 200 Hello Go2
+	fmt.Println(i3, s3) // 0 ※初期化せずに変数宣言するとそれぞれの型のデフォルト値が出力。string は空文字
+
 }
