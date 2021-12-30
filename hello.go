@@ -42,4 +42,7 @@ func main() {
 func outer() {
 	var s4 string = "outer"
 	fmt.Println(s4)
+
+	var i int = 300
+	fmt.Printf("%T\n", i) // int
 }
