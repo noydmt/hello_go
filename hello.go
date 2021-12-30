@@ -23,4 +23,8 @@ func main() {
 	if t {
 		fmt.Println("if文を評価")
 	}
+
+	i3 = 300
+	s3 = "Hello Go World"
+	fmt.Println(i3, s3) // 300 Hello Go World
 }
