@@ -20,4 +20,10 @@ func main() {
 	if t {
 		fmt.Println("if文を評価")
 	}
+
+	var (
+		i2 int    = 200
+		s2 string = "Hello Go2"
+	)
+	fmt.Println(i2, s2)
 }
