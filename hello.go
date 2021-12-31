@@ -54,7 +54,7 @@ func outer() {
 	fmt.Println(str_hello[0])         // 72
 	fmt.Println(string(str_hello[0])) // H
 
-	byteA := []byte{72, 73}
+	var byteA []byte = []byte{72, 73}
 	fmt.Println(byteA)         // [72,73]
 	fmt.Println(string(byteA)) // HI
 }
