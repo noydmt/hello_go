@@ -49,4 +49,8 @@ func outer() {
 	fmt.Printf("%T\n", int32(i)) // int32
 	fmt.Printf("%T\n", int16(i)) // int16
 	fmt.Printf("%T\n", int8(i))  // int8
+
+	var str_hello string = "Hello"
+	fmt.Println(str_hello[0])         // 72
+	fmt.Println(string(str_hello[0])) // H
 }
