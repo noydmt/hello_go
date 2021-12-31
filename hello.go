@@ -57,4 +57,7 @@ func outer() {
 	var byteA []byte = []byte{72, 73}
 	fmt.Println(byteA)         // [72,73]
 	fmt.Println(string(byteA)) // HI
+
+	byteB := []byte("HI")
+	fmt.Println(byteB) // [72,73]
 }
