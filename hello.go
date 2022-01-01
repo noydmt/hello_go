@@ -60,4 +60,7 @@ func outer() {
 
 	byteB := []byte("HI")
 	fmt.Println(byteB) // [72,73]
+
+	var array1 [3]int
+	fmt.Println(array1)
 }
