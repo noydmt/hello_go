@@ -62,5 +62,9 @@ func outer() {
 	fmt.Println(byteB) // [72,73]
 
 	var array1 [3]int
-	fmt.Println(array1)
+	fmt.Println(array1)        // [0,0,0]
+	fmt.Printf("%T\n", array1) // [3]int
+
+	var array2 [3]string = [3]string{"A", "B"}
+	fmt.Println(array2) // [A B ]
 }
