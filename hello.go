@@ -78,4 +78,6 @@ func outer() {
 	fmt.Printf("%T\n", array5) // [1]string
 
 	fmt.Println(array4[2]) // C
+	array4[3] = "E"
+	fmt.Println(array4) // [A B C E]
 }
