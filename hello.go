@@ -41,11 +41,17 @@ func main() {
 	var interface1 interface{}
 	fmt.Println(interface1) // <nil>
 	interface1 = 2
-	fmt.Println(interface1) // 2
+	fmt.Println(interface1)        // 2
+	fmt.Printf("%T\n", interface1) // int
 	interface1 = [3]int{1, 2, 3}
-	fmt.Println(interface1) // [1,2,3]
+	fmt.Println(interface1)        // [1,2,3]
+	fmt.Printf("%T\n", interface1) // [3]int
 	interface1 = "aaa"
-	fmt.Println(interface1) // aaa
+	fmt.Println(interface1)        // aaa
+	fmt.Printf("%T\n", interface1) // string
+
+	// interface1 = 2
+	// fmt.Println(interface1 + 1) // mismatched types interface {} and int
 }
 
 func outer() {
