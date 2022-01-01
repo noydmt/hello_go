@@ -37,6 +37,15 @@ func main() {
 	fmt.Println(i5)
 
 	outer()
+
+	var interface1 interface{}
+	fmt.Println(interface1) // <nil>
+	interface1 = 2
+	fmt.Println(interface1) // 2
+	interface1 = [3]int{1, 2, 3}
+	fmt.Println(interface1) // [1,2,3]
+	interface1 = "aaa"
+	fmt.Println(interface1) // aaa
 }
 
 func outer() {
