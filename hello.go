@@ -52,6 +52,8 @@ func main() {
 
 	// interface1 = 2
 	// fmt.Println(interface1 + 1) // mismatched types interface {} and int
+
+	interfaceTransform()
 }
 
 func outer() {
@@ -96,4 +98,12 @@ func outer() {
 	array4[3] = "E"
 	fmt.Println(array4)      // [A B C E]
 	fmt.Println(len(array4)) // 4
+}
+
+func interfaceTransform() {
+	var i int = 1
+	fl64 := float64(i)
+	fmt.Println(fl64)        // 1
+	fmt.Printf("%T\n", fl64) // float64
+	fmt.Printf("%T\n", i)    // int
 }
