@@ -67,4 +67,7 @@ func outer() {
 
 	var array2 [3]string = [3]string{"A", "B"}
 	fmt.Println(array2) // [A B ]
+
+	array3 := [3]int{}
+	fmt.Println(array3) // [0 0 0]
 }
