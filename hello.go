@@ -70,4 +70,7 @@ func outer() {
 
 	array3 := [3]int{}
 	fmt.Println(array3) // [0 0 0]
+
+	array4 := [...]string{"A", "B", "C", "D"}
+	fmt.Println(array4) // [A B C D]
 }
