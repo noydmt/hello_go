@@ -72,5 +72,8 @@ func outer() {
 	fmt.Println(array3) // [0 0 0]
 
 	array4 := [...]string{"A", "B", "C", "D"}
-	fmt.Println(array4) // [A B C D]
+	fmt.Println(array4)        // [A B C D]
+	fmt.Printf("%T\n", array4) // [4]string
+	array5 := [...]string{"A"}
+	fmt.Printf("%T\n", array5) // [1]string
 }
